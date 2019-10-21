@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/blocktree/go-owaddress"
+	"github.com/Assetsadapter/go-owaddress"
 	"testing"
 )
 
@@ -22,7 +22,6 @@ func Test_eth_AddressVerify_Valid(t *testing.T) {
 		t.Error("Failed to verify valid address")
 	}
 }
-
 
 func Test_eth_AddressVerify_InValid(t *testing.T) {
 

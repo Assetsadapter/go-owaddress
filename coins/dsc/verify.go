@@ -1,8 +1,8 @@
 package dsc
 
 import (
-	"github.com/blocktree/go-owaddress/address"
-	"github.com/blocktree/go-owaddress/utils"
+	"github.com/Assetsadapter/go-owaddress/address"
+	"github.com/Assetsadapter/go-owaddress/utils"
 	"github.com/blocktree/go-owcrypt"
 )
 

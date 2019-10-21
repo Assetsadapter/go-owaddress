@@ -1,8 +1,8 @@
 package ae
 
 import (
-	"github.com/blocktree/go-owaddress/address"
-	"github.com/blocktree/go-owaddress/utils"
+	"github.com/Assetsadapter/go-owaddress/address"
+	"github.com/Assetsadapter/go-owaddress/utils"
 	"github.com/blocktree/go-owcrypt"
 	"strings"
 )
@@ -10,15 +10,15 @@ import (
 // for register
 var (
 	DefaultStruct = &AddressVerify{}
-	CoinName = "ae"
+	CoinName      = "ae"
 )
 
 type AddressVerify struct {
 	address.AddressVerify
 }
 
-func (b AddressVerify) IsValid (address string) bool {
-	var(
+func (b AddressVerify) IsValid(address string) bool {
+	var (
 		base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
 		AEPrefixAccountPubkey = "ak_"
@@ -40,8 +40,8 @@ func (b AddressVerify) IsValid (address string) bool {
 
 	check := owcrypt.Hash(decodeBytes[:32], 0, owcrypt.HASh_ALG_DOUBLE_SHA256)[:4]
 
-	for i := 0; i < 4; i ++ {
-		if check[i] != decodeBytes[32 + i] {
+	for i := 0; i < 4; i++ {
+		if check[i] != decodeBytes[32+i] {
 			return false
 		}
 	}

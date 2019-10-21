@@ -1,8 +1,7 @@
 package test
 
-
 import (
-	"github.com/blocktree/go-owaddress"
+	"github.com/Assetsadapter/go-owaddress"
 	"testing"
 )
 
@@ -24,7 +23,6 @@ func Test_fiii_AddressVerify_Valid(t *testing.T) {
 	}
 
 }
-
 
 func Test_fiii_AddressVerify_InValid(t *testing.T) {
 

@@ -1,8 +1,7 @@
 package test
 
-
 import (
-	"github.com/blocktree/go-owaddress"
+	"github.com/Assetsadapter/go-owaddress"
 	"testing"
 )
 
@@ -23,7 +22,6 @@ func Test_xrp_AddressVerify_Valid(t *testing.T) {
 		t.Error("Failed to verify P2PKH valid address")
 	}
 }
-
 
 func Test_xrp_AddressVerify_InValid(t *testing.T) {
 

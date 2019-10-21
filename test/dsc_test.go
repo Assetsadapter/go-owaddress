@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/blocktree/go-owaddress"
+	"github.com/Assetsadapter/go-owaddress"
 	"testing"
 )
 
