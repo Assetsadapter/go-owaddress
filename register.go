@@ -3,6 +3,7 @@ package owaddress
 import (
 	"github.com/blocktree/go-owaddress/coins/ae"
 	"github.com/blocktree/go-owaddress/coins/alc"
+	"github.com/blocktree/go-owaddress/coins/amtc"
 	"github.com/blocktree/go-owaddress/coins/atom"
 	"github.com/blocktree/go-owaddress/coins/bnb"
 	"github.com/blocktree/go-owaddress/coins/btc"
@@ -80,4 +81,5 @@ func init() {
 	RegisterAddressVerify(sinoc.DefaultStruct, sinoc.CoinName)
 	RegisterAddressVerify(ae.DefaultStruct, ae.CoinName)
 	RegisterAddressVerify(macc.DefaultStruct, macc.CoinName)
+	RegisterAddressVerify(amtc.DefaultStruct, amtc.CoinName)
 }

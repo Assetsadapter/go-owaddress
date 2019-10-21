@@ -1,15 +1,16 @@
-package dsc
+package amtc
 
 import (
 	"github.com/blocktree/go-owaddress/address"
 	"github.com/blocktree/go-owaddress/utils"
 	"github.com/blocktree/go-owcrypt"
+	"strings"
 )
 
 // for register
 var (
 	DefaultStruct = &AddressVerify{}
-	CoinName      = "dsc"
+	CoinName      = "amtc"
 )
 
 type AddressVerify struct {
@@ -19,13 +20,24 @@ type AddressVerify struct {
 func (b AddressVerify) IsValid(address string) bool {
 	var (
 		base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+		bech32Alphabet = "qpzry9x8gf2tvdw0s3jn54khce6mua7l"
 
-		P2PKHPrefix = byte(0x1e)
-		P2SHPrefix  = byte(0x10)
+		P2PKHPrefix  = byte(0x00)
+		P2SHPrefix   = byte(0x05)
+		Bech32Prefix = "bc"
 	)
 
 	if address == "" {
 		return false
+	}
+
+	if strings.Index(address, Bech32Prefix) == 0 { // bech32 address
+		hash, err := utils.Bech32Decode(address, bech32Alphabet)
+		if err != nil || len(hash) != 20 {
+			return false
+		}
+
+		return true
 	}
 
 	decodeBytes, err := utils.Base58Decode(address, base58Alphabet)
