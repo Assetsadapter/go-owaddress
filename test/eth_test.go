@@ -10,7 +10,7 @@ func Test_eth_AddressVerify_Valid(t *testing.T) {
 	coin := "eth"
 	expect := true
 
-	Address := "0x1dcbc4eac58965d9d845442df859a2f5434fec7a"
+	Address := "0x97edc8c4e5ca09fa5094d24639e09947fe39829a23"
 
 	valid, err := owaddress.Verify(coin, Address)
 
