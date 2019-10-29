@@ -13,6 +13,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/dsc"
 	"github.com/Assetsadapter/go-owaddress/coins/ela"
 	"github.com/Assetsadapter/go-owaddress/coins/eth"
+	"github.com/Assetsadapter/go-owaddress/coins/etz"
 	"github.com/Assetsadapter/go-owaddress/coins/fiii"
 	"github.com/Assetsadapter/go-owaddress/coins/g50"
 	"github.com/Assetsadapter/go-owaddress/coins/hc"
@@ -76,6 +77,7 @@ func init() {
 	RegisterAddressVerify(dgb.DefaultStruct, dgb.CoinName)
 	RegisterAddressVerify(alc.DefaultStruct, alc.CoinName)
 	RegisterAddressVerify(eth.DefaultStruct, eth.CoinName)
+	RegisterAddressVerify(etz.DefaultStruct, etz.CoinName)
 	RegisterAddressVerify(pess.DefaultStruct, pess.CoinName)
 	RegisterAddressVerify(vcc.DefaultStruct, vcc.CoinName)
 	RegisterAddressVerify(truechain.DefaultStruct, truechain.CoinName)
