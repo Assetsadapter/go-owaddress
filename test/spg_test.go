@@ -10,7 +10,7 @@ func Test_spg_AddressVerify_Valid(t *testing.T) {
 	expect := true
 	coin := "spg"
 
-	p2pkhAddress := "SiZY38njUbKK5kMTzrdUA8Cq9K8D9HBwKm"
+	p2pkhAddress := "SegiQM4iR8DnVWWqsTcWsL4tYQrEK1Q2gX"
 	//p2shAddress := "31nM1cyzC3q8i8AHPK8QDFkLV8ecnuuUCG"
 	//bech32Address := "ltc1qqqqqpuwrmhu2k6vr97gsq4lfntyv7w7xxy2nal"
 	//p2sh2Address := "MKhcngTM1pk9a5z4jb58ZW3t7xFhvMDiDc"
@@ -57,7 +57,7 @@ func Test_spg_AddressVerify_InValid(t *testing.T) {
 	coin := "spg"
 	expect := false
 
-	p2pkhAddress := "SiZY38njUbKK5kMTzrdUA8Cq9K8D9HBwKp"
+	p2pkhAddress := "SegiQM4iR8DnVWWqsTcWsL4tYQrEK1Q2gXs"
 	//p2shAddress := "31nM1cyzC3q8i8AHPK8QDFkLV8ecnuuUC4"
 	//bech32Address := "ltc1qqqqqpuwrmhu2k6vr97gsq4lfntyv7w7xxy2na7"
 

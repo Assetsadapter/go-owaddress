@@ -25,6 +25,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/pess"
 	"github.com/Assetsadapter/go-owaddress/coins/qtum"
 	"github.com/Assetsadapter/go-owaddress/coins/sinoc"
+	"github.com/Assetsadapter/go-owaddress/coins/spg"
 	truechain "github.com/Assetsadapter/go-owaddress/coins/true"
 	"github.com/Assetsadapter/go-owaddress/coins/trx"
 	"github.com/Assetsadapter/go-owaddress/coins/tv"
@@ -84,4 +85,5 @@ func init() {
 	RegisterAddressVerify(macc.DefaultStruct, macc.CoinName)
 	RegisterAddressVerify(amtc.DefaultStruct, amtc.CoinName)
 	RegisterAddressVerify(vns.DefaultStruct, vns.CoinName)
+	RegisterAddressVerify(spg.DefaultStruct, spg.CoinName)
 }

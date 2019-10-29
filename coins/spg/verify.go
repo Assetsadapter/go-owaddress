@@ -1,10 +1,9 @@
-package ltc
+package spg
 
 import (
 	"github.com/Assetsadapter/go-owaddress/address"
 	"github.com/Assetsadapter/go-owaddress/utils"
 	"github.com/blocktree/go-owcrypt"
-	"strings"
 )
 
 // for register
