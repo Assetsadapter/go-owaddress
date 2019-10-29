@@ -1,4 +1,4 @@
-package eth
+package etz
 
 import (
 	"encoding/hex"
