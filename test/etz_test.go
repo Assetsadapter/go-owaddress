@@ -10,7 +10,7 @@ func Test_etz_AddressVerify_Valid(t *testing.T) {
 	coin := "etz"
 	expect := true
 
-	Address := "0x97edc8c4e5ca09fa5094d24639e09947fe39829a23"
+	Address := "0x9cf40caae2dbf43f201693ebe09eb8fc7496965b"
 
 	valid, err := owaddress.Verify(coin, Address)
 
@@ -28,7 +28,7 @@ func Test_etz_AddressVerify_InValid(t *testing.T) {
 	coin := "etz"
 	expect := false
 
-	Address := "0xldcbc4eac58965d9d845442df859a2f5434fec7a"
+	Address := "0x9cf40caae2dbf43f201693ebe09eb8fc7496965b"
 
 	valid, err := owaddress.Verify(coin, Address)
 
