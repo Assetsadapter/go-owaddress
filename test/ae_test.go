@@ -25,7 +25,7 @@ func Test_ae_AddressVerify_Valid(t *testing.T) {
 	coin := "ae"
 	expect := true
 
-	AEAddress := "ak_2QkttUgEyPixKzqXkJ4LX7ugbRjwCDWPBT4p4M2r8brjxUxUYd"
+	AEAddress := "ak_2LujRoPk7jyiujiMFeJyyxtybXGNecuArsiRQ7ZBZHf2p6MJqD"
 
 	valid, err := owaddress.Verify(coin, AEAddress)
 
@@ -43,7 +43,7 @@ func Test_ae_AddressVerify_InValid(t *testing.T) {
 	coin := "ae"
 	expect := false
 
-	AEAddress := "0x1dcbc4eac58965d9d845442df859a2f5434fec7a"
+	AEAddress := "ak_2LujRoPk7jyiujiMFeJyyxtybXGNecuArsiRQ7ZBZHf2p6MJqD"
 
 	valid, err := owaddress.Verify(coin, AEAddress)
 
