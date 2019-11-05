@@ -10,7 +10,7 @@ func Test_vlx_AddressVerify_Valid(t *testing.T) {
 	coin := "vlx"
 	expect := true
 
-	p2pkhAddress := "VLY5wrUfsjmKvTJGXEWwNpXQ6Wkzy8HU7Eb"
+	p2pkhAddress := "VLhxQ3SKdcm3xwUQyazfjmKQp3LL5PmQY5K"
 
 	valid, err := owaddress.Verify(coin, p2pkhAddress)
 
@@ -29,7 +29,7 @@ func Test_vlx_AddressVerify_InValid(t *testing.T) {
 	coin := "vlx"
 	expect := false
 
-	p2pkhAddress := "VLY5wrUfsjmKvTJGXEWwNpXQ6Wkzy8HU7EE"
+	p2pkhAddress := "VLhxQ3SKdcm3xwUQyazfjmKQp3LL5PmQY5K"
 
 	valid, err := owaddress.Verify(coin, p2pkhAddress)
 
