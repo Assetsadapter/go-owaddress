@@ -22,6 +22,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/macc"
 	"github.com/Assetsadapter/go-owaddress/coins/moac"
 	"github.com/Assetsadapter/go-owaddress/coins/nas"
+	"github.com/Assetsadapter/go-owaddress/coins/neo"
 	"github.com/Assetsadapter/go-owaddress/coins/ont"
 	"github.com/Assetsadapter/go-owaddress/coins/pess"
 	"github.com/Assetsadapter/go-owaddress/coins/qtum"
@@ -88,4 +89,5 @@ func init() {
 	RegisterAddressVerify(amtc.DefaultStruct, amtc.CoinName)
 	RegisterAddressVerify(vns.DefaultStruct, vns.CoinName)
 	RegisterAddressVerify(spg.DefaultStruct, spg.CoinName)
+	RegisterAddressVerify(neo.DefaultStruct, neo.CoinName)
 }

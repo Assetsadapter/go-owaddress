@@ -1,4 +1,4 @@
-package spg
+package neo
 
 import (
 	"github.com/Assetsadapter/go-owaddress/address"
@@ -9,7 +9,7 @@ import (
 // for register
 var (
 	DefaultStruct = &AddressVerify{}
-	CoinName      = "spg"
+	CoinName      = "neo"
 )
 
 type AddressVerify struct {
@@ -20,7 +20,7 @@ func (b AddressVerify) IsValid(address string) bool {
 	var (
 		base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
-		P2PKHPrefix = byte(0x3f)
+		P2PKHPrefix = byte(0x17)
 	)
 
 	if address == "" {
