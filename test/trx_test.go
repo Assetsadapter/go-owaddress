@@ -10,7 +10,7 @@ func Test_trx_AddressVerify_Valid(t *testing.T) {
 	coin := "trx"
 	expect := true
 
-	Address := "TAJTMJuzvAqB8wmdUjRBVJW8CozfgrhpX3"
+	Address := "TBkYoqf9mrAgfmw5Jagkvyr161Brf17CY3"
 
 	valid, err := owaddress.Verify(coin, Address)
 
