@@ -43,6 +43,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/wicc"
 	"github.com/Assetsadapter/go-owaddress/coins/xrp"
 	"github.com/Assetsadapter/go-owaddress/coins/xvg"
+	"github.com/Assetsadapter/go-owaddress/coins/xwc"
 	"github.com/Assetsadapter/go-owaddress/coins/zen"
 	"reflect"
 )
@@ -98,4 +99,5 @@ func init() {
 	RegisterAddressVerify(ete.DefaultStruct, ete.CoinName)
 	RegisterAddressVerify(etc.DefaultStruct, etc.CoinName)
 	RegisterAddressVerify(fm.DefaultStruct, fm.CoinName)
+	RegisterAddressVerify(xwc.DefaultStruct, xwc.CoinName)
 }
