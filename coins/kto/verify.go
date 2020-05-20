@@ -9,7 +9,7 @@ import (
 // for register
 var (
     DefaultStruct = &AddressVerify{}
-    CoinName      = "kto"
+    CoinName      = "nkto"
 )
 
 type AddressVerify struct {
@@ -18,9 +18,6 @@ type AddressVerify struct {
 
 const (
     base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
-    
-    P2PKHPrefix  = byte(0x00)
-    P2SHPrefix   = byte(0x05)
 )
 
 func (b AddressVerify) IsValid(address string) bool {
