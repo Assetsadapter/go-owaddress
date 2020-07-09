@@ -5,6 +5,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/alc"
 	"github.com/Assetsadapter/go-owaddress/coins/amtc"
 	"github.com/Assetsadapter/go-owaddress/coins/atom"
+	"github.com/Assetsadapter/go-owaddress/coins/bch"
 	"github.com/Assetsadapter/go-owaddress/coins/bnb"
 	"github.com/Assetsadapter/go-owaddress/coins/btc"
 	"github.com/Assetsadapter/go-owaddress/coins/btx"
@@ -34,6 +35,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/ria"
 	"github.com/Assetsadapter/go-owaddress/coins/sinoc"
 	"github.com/Assetsadapter/go-owaddress/coins/spg"
+	"github.com/Assetsadapter/go-owaddress/coins/stm"
 	truechain "github.com/Assetsadapter/go-owaddress/coins/true"
 	"github.com/Assetsadapter/go-owaddress/coins/trx"
 	"github.com/Assetsadapter/go-owaddress/coins/tv"
@@ -104,4 +106,6 @@ func init() {
 	RegisterAddressVerify(xwc.DefaultStruct, xwc.CoinName)
 	RegisterAddressVerify(etx.DefaultStruct, etx.CoinName)
 	RegisterAddressVerify(kto.DefaultStruct, kto.CoinName)
+	RegisterAddressVerify(stm.DefaultStruct, stm.CoinName)
+	RegisterAddressVerify(bch.DefaultStruct, bch.CoinName)
 }
