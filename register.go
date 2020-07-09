@@ -36,6 +36,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/ria"
 	"github.com/Assetsadapter/go-owaddress/coins/sinoc"
 	"github.com/Assetsadapter/go-owaddress/coins/spg"
+	"github.com/Assetsadapter/go-owaddress/coins/stm"
 	truechain "github.com/Assetsadapter/go-owaddress/coins/true"
 	"github.com/Assetsadapter/go-owaddress/coins/trx"
 	"github.com/Assetsadapter/go-owaddress/coins/tv"
