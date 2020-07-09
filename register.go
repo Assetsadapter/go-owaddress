@@ -7,6 +7,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/atom"
 	"github.com/Assetsadapter/go-owaddress/coins/bch"
 	"github.com/Assetsadapter/go-owaddress/coins/bnb"
+	"github.com/Assetsadapter/go-owaddress/coins/bsv"
 	"github.com/Assetsadapter/go-owaddress/coins/btc"
 	"github.com/Assetsadapter/go-owaddress/coins/btx"
 	"github.com/Assetsadapter/go-owaddress/coins/cxc"
@@ -110,4 +111,5 @@ func init() {
 	RegisterAddressVerify(stm.DefaultStruct, stm.CoinName)
 	RegisterAddressVerify(bch.DefaultStruct, bch.CoinName)
 	RegisterAddressVerify(doge.DefaultStruct, doge.CoinName)
+	RegisterAddressVerify(bsv.DefaultStruct, bsv.CoinName)
 }
