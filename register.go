@@ -13,6 +13,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/cxc"
 	"github.com/Assetsadapter/go-owaddress/coins/dgb"
 	"github.com/Assetsadapter/go-owaddress/coins/doge"
+	"github.com/Assetsadapter/go-owaddress/coins/dos"
 	"github.com/Assetsadapter/go-owaddress/coins/dsc"
 	"github.com/Assetsadapter/go-owaddress/coins/ela"
 	"github.com/Assetsadapter/go-owaddress/coins/eos"
@@ -114,4 +115,6 @@ func init() {
 	RegisterAddressVerify(doge.DefaultStruct, doge.CoinName)
 	RegisterAddressVerify(bsv.DefaultStruct, bsv.CoinName)
 	RegisterAddressVerify(eos.DefaultStruct, eos.CoinName)
+	RegisterAddressVerify(dos.DefaultStruct, dos.CoinName)
+
 }
