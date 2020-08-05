@@ -1,6 +1,8 @@
 package owaddress
 
 import (
+	"reflect"
+
 	"github.com/Assetsadapter/go-owaddress/coins/ae"
 	"github.com/Assetsadapter/go-owaddress/coins/alc"
 	"github.com/Assetsadapter/go-owaddress/coins/amtc"
@@ -54,7 +56,6 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/xwc"
 	"github.com/Assetsadapter/go-owaddress/coins/zec"
 	"github.com/Assetsadapter/go-owaddress/coins/zen"
-	"reflect"
 )
 
 var AddressVerifyRegistry = make(map[string]reflect.Type)
