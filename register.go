@@ -52,6 +52,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/xrp"
 	"github.com/Assetsadapter/go-owaddress/coins/xvg"
 	"github.com/Assetsadapter/go-owaddress/coins/xwc"
+	"github.com/Assetsadapter/go-owaddress/coins/zec"
 	"github.com/Assetsadapter/go-owaddress/coins/zen"
 	"reflect"
 )
@@ -116,5 +117,5 @@ func init() {
 	RegisterAddressVerify(bsv.DefaultStruct, bsv.CoinName)
 	RegisterAddressVerify(eos.DefaultStruct, eos.CoinName)
 	RegisterAddressVerify(dos.DefaultStruct, dos.CoinName)
-
+	RegisterAddressVerify(zec.DefaultStruct, zec.CoinName)
 }
