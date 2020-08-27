@@ -3,7 +3,7 @@ package bbc
 import (
 	"encoding/base32"
 	"encoding/binary"
-	"github.com/Assetsadapter/go-owaddress/v2/address"
+	"github.com/Assetsadapter/go-owaddress/address"
 	"strings"
 )
 

@@ -2,7 +2,7 @@ package test
 
 
 import (
-	"github.com/Assetsadapter/go-owaddress/v2"
+	"github.com/Assetsadapter/go-owaddress"
 	"testing"
 )
 

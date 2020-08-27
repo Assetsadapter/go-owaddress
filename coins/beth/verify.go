@@ -2,7 +2,7 @@ package beth
 
 import (
 	"encoding/hex"
-	"github.com/Assetsadapter/go-owaddress/v2/address"
+	"github.com/Assetsadapter/go-owaddress/address"
 	"strings"
 )
 

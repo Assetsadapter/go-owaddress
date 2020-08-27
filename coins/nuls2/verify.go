@@ -2,7 +2,7 @@ package nuls2
 
 import (
 	"bytes"
-	"github.com/Assetsadapter/go-owaddress/v2/address"
+	"github.com/Assetsadapter/go-owaddress/address"
 	"math/big"
 )
 

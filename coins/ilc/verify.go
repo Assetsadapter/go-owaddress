@@ -3,8 +3,8 @@ package ilc
 
 
 import (
-	"github.com/Assetsadapter/go-owaddress/v2/address"
-	"github.com/Assetsadapter/go-owaddress/v2/utils"
+	"github.com/Assetsadapter/go-owaddress/address"
+	"github.com/Assetsadapter/go-owaddress/utils"
 	"github.com/blocktree/go-owcrypt"
 	"strings"
 )

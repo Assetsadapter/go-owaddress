@@ -21,8 +21,8 @@ import (
 	"testing"
 )
 
-func Test_ksm_ed25519_AddressVerify_Valid(t *testing.T) {
-	coin := "ksm"
+func Test_dot_AddressVerify_Valid(t *testing.T) {
+	coin := "dot"
 
 	addressArr := make([]string, 0)
 	addressArr = append(addressArr, "12tFo5exojfy4e9GLzzRQRP7Bdv4Zt8ZRL82rXCWW4Jq2Bub")	//正确
@@ -40,7 +40,7 @@ func Test_ksm_ed25519_AddressVerify_Valid(t *testing.T) {
 }
 
 func Test_ksm_sr25519_AddressVerify_Valid(t *testing.T) {
-	coin := "ksm"
+	coin := "dot"
 
 	addressArr := make([]string, 0)
 	addressArr = append(addressArr, "12tFo5exojfy4e9GLzzRQRP7Bdv4Zt8ZRL82rXCWW4Jq2Bub")	//正确
