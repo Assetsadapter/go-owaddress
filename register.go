@@ -1,7 +1,6 @@
 package owaddress
 
 import (
-	"github.com/Assetsadapter/go-owaddress/coins/xlm"
 	"reflect"
 
 	"github.com/Assetsadapter/go-owaddress/coins/ae"
@@ -53,6 +52,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/vsys"
 	"github.com/Assetsadapter/go-owaddress/coins/wicc"
 	"github.com/Assetsadapter/go-owaddress/coins/wsc"
+	"github.com/Assetsadapter/go-owaddress/coins/xlm"
 	"github.com/Assetsadapter/go-owaddress/coins/xrp"
 	"github.com/Assetsadapter/go-owaddress/coins/xvg"
 	"github.com/Assetsadapter/go-owaddress/coins/xwc"
