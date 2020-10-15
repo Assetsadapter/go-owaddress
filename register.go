@@ -1,6 +1,8 @@
 package owaddress
 
 import (
+	"reflect"
+
 	"github.com/Assetsadapter/go-owaddress/coins/ae"
 	"github.com/Assetsadapter/go-owaddress/coins/alc"
 	"github.com/Assetsadapter/go-owaddress/coins/ark"
@@ -20,7 +22,9 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/eth"
 	"github.com/Assetsadapter/go-owaddress/coins/etp"
 	"github.com/Assetsadapter/go-owaddress/coins/eva"
+	"github.com/Assetsadapter/go-owaddress/coins/fac"
 	"github.com/Assetsadapter/go-owaddress/coins/fiii"
+	"github.com/Assetsadapter/go-owaddress/coins/fil"
 	"github.com/Assetsadapter/go-owaddress/coins/g50"
 	"github.com/Assetsadapter/go-owaddress/coins/hc"
 	"github.com/Assetsadapter/go-owaddress/coins/hns"
@@ -31,6 +35,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/macc"
 	"github.com/Assetsadapter/go-owaddress/coins/moac"
 	"github.com/Assetsadapter/go-owaddress/coins/nas"
+	"github.com/Assetsadapter/go-owaddress/coins/nhss"
 	"github.com/Assetsadapter/go-owaddress/coins/ntn"
 	"github.com/Assetsadapter/go-owaddress/coins/nuls2"
 	"github.com/Assetsadapter/go-owaddress/coins/ont"
@@ -51,12 +56,9 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/wicc"
 	"github.com/Assetsadapter/go-owaddress/coins/xif"
 	"github.com/Assetsadapter/go-owaddress/coins/xrp"
-	"github.com/Assetsadapter/go-owaddress/coins/fac"
 	"github.com/Assetsadapter/go-owaddress/coins/xvg"
 	"github.com/Assetsadapter/go-owaddress/coins/xwc"
 	"github.com/Assetsadapter/go-owaddress/coins/zen"
-	"github.com/Assetsadapter/go-owaddress/coins/nhss"
-	"reflect"
 )
 
 var AddressVerifyRegistry = make(map[string]reflect.Type)
@@ -123,4 +125,5 @@ func init() {
 	RegisterAddressVerify(hns.DefaultStruct, hns.CoinName)
 	RegisterAddressVerify(kpg.DefaultStruct, kpg.CoinName)
 	RegisterAddressVerify(dot.DefaultStruct, dot.CoinName)
+	RegisterAddressVerify(fil.DefaultStruct, fil.CoinName)
 }
