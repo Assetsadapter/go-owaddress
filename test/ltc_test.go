@@ -1,9 +1,9 @@
 package test
 
-
 import (
-	"github.com/Assetsadapter/go-owaddress"
 	"testing"
+
+	"github.com/Assetsadapter/go-owaddress"
 )
 
 func Test_ltc_AddressVerify_Valid(t *testing.T) {
@@ -26,7 +26,6 @@ func Test_ltc_AddressVerify_Valid(t *testing.T) {
 		t.Error("Failed to verify P2PKH valid address")
 	}
 
-
 	valid, err = owaddress.Verify(coin, p2shAddress)
 
 	if err != nil {
@@ -42,6 +41,9 @@ func Test_ltc_AddressVerify_Valid(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
+	if valid != expect {
+		t.Error("Failed to verify Bech32 valid address")
+	}
 
 	valid, err = owaddress.Verify(coin, p2sh2Address)
 
@@ -50,10 +52,9 @@ func Test_ltc_AddressVerify_Valid(t *testing.T) {
 	}
 
 	if valid != expect {
-		t.Error("Failed to verify Bech32 valid address")
+		t.Error("Failed to verify p2sh2 valid address")
 	}
 }
-
 
 func Test_ltc_AddressVerify_InValid(t *testing.T) {
 
@@ -64,7 +65,6 @@ func Test_ltc_AddressVerify_InValid(t *testing.T) {
 	p2shAddress := "31nM1cyzC3q8i8AHPK8QDFkLV8ecnuuUC4"
 	bech32Address := "ltc1qqqqqpuwrmhu2k6vr97gsq4lfntyv7w7xxy2na7"
 
-
 	valid, err := owaddress.Verify(coin, p2pkhAddress)
 
 	if err != nil {
@@ -74,7 +74,6 @@ func Test_ltc_AddressVerify_InValid(t *testing.T) {
 	if valid != expect {
 		t.Error("Failed to verify P2PKH invalid address")
 	}
-
 
 	valid, err = owaddress.Verify(coin, p2shAddress)
 
