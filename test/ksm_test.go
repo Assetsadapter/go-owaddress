@@ -22,11 +22,11 @@ import (
 	"github.com/Assetsadapter/go-owaddress"
 )
 
-func Test_dot_AddressVerify_Valid(t *testing.T) {
-	coin := "dot"
+func Test_ksm_AddressVerify_Valid(t *testing.T) {
+	coin := "ksm"
 
 	addressArr := make([]string, 0)
-	addressArr = append(addressArr, "12tFo5exojfy4e9GLzzRQRP7Bdv4Zt8ZRL82rXCWW4Jq2Bub") //正确
+	addressArr = append(addressArr, "E4zw9LhNxEbYbKBpJVLkVaDYRYdEBMjiX3oqkQx5EpYaSNK") //正确
 
 	for i := 0; i < len(addressArr); i++ {
 		address := addressArr[i]
@@ -40,11 +40,11 @@ func Test_dot_AddressVerify_Valid(t *testing.T) {
 	}
 }
 
-func Test_dot_sr25519_AddressVerify_Valid(t *testing.T) {
-	coin := "dot"
+func Test_ksm_sr25519_AddressVerify_Valid(t *testing.T) {
+	coin := "ksm"
 
 	addressArr := make([]string, 0)
-	addressArr = append(addressArr, "12tFo5exojfy4e9GLzzRQRP7Bdv4Zt8ZRL82rXCWW4Jq2Bub") //正确
+	addressArr = append(addressArr, "E4zw9LhNxEbYbKBpJVLkVaDYRYdEBMjiX3oqkQx5EpYaSNK") //正确
 
 	for i := 0; i < len(addressArr); i++ {
 		address := addressArr[i]

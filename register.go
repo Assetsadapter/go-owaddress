@@ -32,6 +32,7 @@ import (
 	"github.com/Assetsadapter/go-owaddress/coins/hss"
 	"github.com/Assetsadapter/go-owaddress/coins/ilc"
 	"github.com/Assetsadapter/go-owaddress/coins/kpg"
+	"github.com/Assetsadapter/go-owaddress/coins/ksm"
 	"github.com/Assetsadapter/go-owaddress/coins/ltc"
 	"github.com/Assetsadapter/go-owaddress/coins/macc"
 	"github.com/Assetsadapter/go-owaddress/coins/moac"
@@ -128,4 +129,5 @@ func init() {
 	RegisterAddressVerify(dot.DefaultStruct, dot.CoinName)
 	RegisterAddressVerify(fil.DefaultStruct, fil.CoinName)
 	RegisterAddressVerify(avax.DefaultStruct, avax.CoinName)
+	RegisterAddressVerify(ksm.DefaultStruct, ksm.CoinName)
 }
