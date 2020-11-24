@@ -1,4 +1,4 @@
-module github.com/Assetsadapter/go-owaddress
+module github.com/Assetsadapter/go-owaddress/v2
 
 go 1.12
 
