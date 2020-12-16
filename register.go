@@ -50,6 +50,7 @@ import (
 	truechain "github.com/Assetsadapter/go-owaddress/coins/true"
 	"github.com/Assetsadapter/go-owaddress/coins/trx"
 	"github.com/Assetsadapter/go-owaddress/coins/tv"
+	"github.com/Assetsadapter/go-owaddress/coins/ufc"
 	"github.com/Assetsadapter/go-owaddress/coins/vas"
 	"github.com/Assetsadapter/go-owaddress/coins/vcc"
 	"github.com/Assetsadapter/go-owaddress/coins/vds"
@@ -130,4 +131,5 @@ func init() {
 	RegisterAddressVerify(fil.DefaultStruct, fil.CoinName)
 	RegisterAddressVerify(avax.DefaultStruct, avax.CoinName)
 	RegisterAddressVerify(ksm.DefaultStruct, ksm.CoinName)
+	RegisterAddressVerify(ufc.DefaultStruct, ufc.CoinName)
 }
