@@ -1,6 +1,7 @@
 package owaddress
 
 import (
+	"github.com/Assetsadapter/go-owaddress/coins/morse"
 	"reflect"
 
 	"github.com/Assetsadapter/go-owaddress/coins/ae"
@@ -123,5 +124,6 @@ func init() {
 	RegisterAddressVerify(zec.DefaultStruct, zec.CoinName)
 	RegisterAddressVerify(xlm.DefaultStruct, xlm.CoinName)
 	RegisterAddressVerify(wsc.DefaultStruct, wsc.CoinName)
+	RegisterAddressVerify(morse.DefaultStruct, morse.CoinName)
 
 }
