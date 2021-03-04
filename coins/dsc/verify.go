@@ -20,7 +20,7 @@ func (b AddressVerify) IsValid(address string) bool {
 	var (
 		base58Alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
-		P2PKHPrefix = byte(0x1e)
+		P2PKHPrefix = byte(0x17)
 		P2SHPrefix  = byte(0x10)
 	)
 
